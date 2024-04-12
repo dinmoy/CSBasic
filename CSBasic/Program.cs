@@ -18,7 +18,12 @@ namespace CSBasic
             int b = 1000000000; //10억
             Console.WriteLine(a + b);
 
-           
+            //오버플로우 연습2
+            // 작은 타입이 큰 타입으로 암묵적 변환이 됨
+            //b는 int형이지만 앞에 a의 형에 맞춰 long형이됨
+            Console.WriteLine((long)a + b);
+            Console.WriteLine(a+(long)b);
+            Console.WriteLine((long)a+(long)b);
         }
     }
 }
